@@ -1,10 +1,6 @@
-from pygame import *
-from ball import*
-game = True
-
-W = 1366
-H = 768
-win = display.set_mode((W,H),FULLSCREEN)
+from pygame import*
+from game import *
+print('hello')
 
 class Main(sprite.Sprite):
     def __init__(self,x,y,pic,W,H,speed,face):
@@ -35,35 +31,4 @@ class Ball(Main):
             if self.rect.y < 0:
                 self.face = 'up'
 
-        
-
-BALL = Ball(300,300,'ball.png',40,40,50,'left')
-
-def control():
-    global game
-    for e in event.get():
-        if e.type == 2:
-            if e.key == K_ESCAPE:
-                game = False
-        if e.type == 12:
-            game = False
-
-
-
-while game:
-    control()
-    win.fill((255,255,255))
-    BALL.update()
-    BALL.reset()
-
-
-
-
-
-
-
-
-
-
-
-    display.update()
+        self.reset()
