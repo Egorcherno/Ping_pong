@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['ping_pong.py'],
-             pathex=['c:\\Users\\egor3\\Desktop\\Ping_pong-main'],
+             pathex=['C:\\Users\\egor3\\Desktop\\Ping_pong-main'],
              binaries=[],
              datas=[],
              hiddenimports=[],
