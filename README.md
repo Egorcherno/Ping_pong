@@ -1,2 +1,2 @@
 # Ping_pong
-d 'njq buht ,elen hfrtnrb ,ktr
+this is a ping pong game for one or two players
